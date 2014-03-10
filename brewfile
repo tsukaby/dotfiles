@@ -20,6 +20,7 @@ install mongodb || true
 install ricty || true
 install wget || true
 install ec2-api-tools || true
+install aws-elasticbeanstalk || true
 
 # cask install
 cask install skype || true
