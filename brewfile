@@ -26,3 +26,4 @@ cask install firefox || true
 cask install iterm2 || true
 cask install diffmerge || true
 cask install thunderbird || true
+cask install sourcetree || true
