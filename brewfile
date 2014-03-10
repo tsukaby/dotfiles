@@ -19,6 +19,7 @@ install yeoman || true
 install mongodb || true
 install ricty || true
 install wget || true
+install ec2-api-tools || true
 
 # cask install
 cask install skype || true
