@@ -1,0 +1,28 @@
+tap phinze/homebrew-cask || true
+tap homebrew/versions || true
+tap sanemat/font || true
+
+update || true
+
+# install
+install brew-cask || true
+install ruby-build || true
+install rbenv || true
+install automake || true
+install zsh || true
+install heroku-toolbelt || true
+install postgresql || true
+install gibo || true
+install node || true
+install bower || true
+install yeoman || true
+install mongodb || true
+install ricty || true
+install wget || true
+
+# cask install
+cask install skype || true
+cask install firefox || true
+cask install iterm2 || true
+cask install diffmerge || true
+cask install thunderbird || true
