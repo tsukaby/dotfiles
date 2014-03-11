@@ -29,3 +29,5 @@ cask install iterm2 || true
 cask install diffmerge || true
 cask install thunderbird || true
 cask install sourcetree || true
+cask install the-unarchiver || true
+cask install gimp || true
