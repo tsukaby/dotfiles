@@ -33,3 +33,5 @@ cask install the-unarchiver || true
 cask install gimp || true
 cask install xtrafinder || true
 cask install yoruhukurou || true
+cask install virtualbox || true
+cask install vagrant || true
