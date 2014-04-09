@@ -35,3 +35,4 @@ cask install xtrafinder || true
 cask install yoruhukurou || true
 cask install virtualbox || true
 cask install vagrant || true
+cask install android-studio-bundle || true
