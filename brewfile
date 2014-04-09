@@ -37,3 +37,4 @@ cask install yoruhukurou || true
 cask install virtualbox || true
 cask install vagrant || true
 cask install android-studio-bundle || true
+cask install unity3d || true
