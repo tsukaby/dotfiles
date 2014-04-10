@@ -17,6 +17,7 @@ install node || true
 install bower || true
 install yeoman || true
 install mongodb || true
+install redis || true
 install ricty || true
 install wget || true
 install ec2-api-tools || true
