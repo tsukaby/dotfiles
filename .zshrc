@@ -17,6 +17,9 @@ export EC2_HOME="/usr/local/Cellar/ec2-api-tools/1.6.12.0/libexec"
 # Android
 export ANDROID_HOME=/usr/local/opt/android-sdk
 
+# Scala
+export SCALA_HOME=/usr/local/opt/scala/idea/
+
 bindkey -e
 
 setopt auto_pushd
