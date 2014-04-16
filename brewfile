@@ -36,7 +36,7 @@ cask install sourcetree || true
 cask install the-unarchiver || true
 cask install gimp || true
 cask install xtrafinder || true
-cask install yoruhukurou || true
+cask install yorufukurou || true
 cask install virtualbox || true
 cask install vagrant || true
 cask install android-studio-bundle || true
