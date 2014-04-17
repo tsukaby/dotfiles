@@ -22,7 +22,8 @@
 (setq scroll-step 1)
 
 ;;; スクロールバーを右側に表示する
-(set-scroll-bar-mode 'right)
+(cond (window-system
+       (set-scroll-bar-mode 'right))) 
 
 ;;; 画面右端で折り返さない
 (setq-default truncate-lines t)
