@@ -113,3 +113,8 @@ alias ll='ls -l'
 function cd() {
   builtin cd $@ && ls;
 }
+
+# AWS
+# AWS-CLI
+source /usr/local/share/zsh/site-functions/_aws
+
