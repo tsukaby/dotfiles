@@ -41,3 +41,8 @@ cask install virtualbox || true
 cask install vagrant || true
 cask install android-studio-bundle || true
 cask install unity3d || true
+cask install sequel-pro || true
+cask install pg-commander || true
+cask install base || true
+cask install mysqlworkbench || true
+
