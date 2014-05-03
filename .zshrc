@@ -118,3 +118,10 @@ function cd() {
 # AWS-CLI
 source /usr/local/share/zsh/site-functions/_aws
 
+# Google Compute Engine
+
+# The next line updates PATH for the Google Cloud SDK.
+source /usr/local/google-cloud-sdk/path.bash.inc
+
+# The next line enables bash completion for gcloud.
+source /usr/local/google-cloud-sdk/completion.zsh.inc
