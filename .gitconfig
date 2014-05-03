@@ -3,6 +3,7 @@
 	email = shuya.tsukamoto@gmail.com
 [core]
 	excludesfile = /Users/tsukaby/.gitignore_global
+	precomposeunicode = true
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
