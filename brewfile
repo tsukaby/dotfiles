@@ -25,6 +25,7 @@ install aws-elasticbeanstalk || true
 install awscli || true
 install android-ndk || true
 install scala || true
+install sbt || true
 install maven || true
 
 # cask install
