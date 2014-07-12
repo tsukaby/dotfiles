@@ -29,7 +29,6 @@ install sbt || true
 install maven || true
 
 # cask install
-cask install skype || true
 cask install firefox || true
 cask install iterm2 || true
 cask install diffmerge || true
@@ -41,8 +40,6 @@ cask install xtrafinder || true
 cask install yorufukurou || true
 cask install virtualbox || true
 cask install vagrant || true
-cask install android-studio-bundle || true
-cask install unity3d || true
 cask install sequel-pro || true
 cask install pg-commander || true
 cask install base || true
