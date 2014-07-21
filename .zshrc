@@ -6,7 +6,7 @@
 export EDITOR=emacs
 export LANG=ja_JP.UTF-8
 # Add homebrew path
-export PATH=~/bin:/usr/local/bin:$PATH
+export PATH=~/bin:/usr/local/sbin:/usr/local/bin:$PATH
 
 # AWS ec2-api-tools
 export JAVA_HOME="$(/usr/libexec/java_home)"
