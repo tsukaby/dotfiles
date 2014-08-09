@@ -27,6 +27,8 @@ install android-ndk || true
 install scala || true
 install sbt || true
 install maven || true
+install tomcat || true
+install tomcat7 || true
 
 # cask install
 cask install firefox || true
@@ -44,4 +46,5 @@ cask install sequel-pro || true
 cask install pg-commander || true
 cask install base || true
 cask install mysqlworkbench || true
-
+cask install day-o || true
+cask install skitch || true
