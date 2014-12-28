@@ -29,6 +29,10 @@ install sbt || true
 install maven || true
 install tomcat || true
 install tomcat7 || true
+install typesafe-activator || true
+install ghc || true
+install cabal-install || true
+install gcc || true
 
 # cask install
 cask install firefox || true
@@ -48,3 +52,4 @@ cask install base || true
 cask install mysqlworkbench || true
 cask install day-o || true
 cask install skitch || true
+cask install recordit || true
