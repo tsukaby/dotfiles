@@ -53,3 +53,5 @@ cask install mysqlworkbench || true
 cask install day-o || true
 cask install skitch || true
 cask install recordit || true
+cask install clipmenu || true
+cask install gitter || true
