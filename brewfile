@@ -33,6 +33,7 @@ install typesafe-activator || true
 install ghc || true
 install cabal-install || true
 install gcc || true
+install gpg || true
 
 # cask install
 cask install firefox || true
