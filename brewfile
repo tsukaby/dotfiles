@@ -32,6 +32,7 @@ install ghc || true
 install cabal-install || true
 install gcc || true
 install gpg || true
+install nvm || true
 
 # cask install
 cask install firefox || true
