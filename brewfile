@@ -23,12 +23,10 @@ install wget || true
 install ec2-api-tools || true
 install aws-elasticbeanstalk || true
 install awscli || true
-install android-ndk || true
 install scala || true
 install sbt || true
 install maven || true
 install tomcat || true
-install tomcat7 || true
 install typesafe-activator || true
 install ghc || true
 install cabal-install || true
