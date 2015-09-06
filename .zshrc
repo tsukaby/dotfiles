@@ -127,3 +127,4 @@ function cd() {
 # AWS-CLI
 source /usr/local/share/zsh/site-functions/_aws
 
+export PGDATA=/usr/local/var/postgres
