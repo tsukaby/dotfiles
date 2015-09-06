@@ -115,6 +115,8 @@ precmd() {
 ### Aliases ###
 alias history='history -E'
 alias ll='ls -l'
+alias dl='docker ps -l -q'
+alias drm='docker rm `docker ps -a -q`'
 
 # execute ls after cd
 function cd() {
