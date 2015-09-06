@@ -24,6 +24,9 @@ export SCALA_HOME=/usr/local/opt/scala/idea/
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
 
+# Secret settings
+source ~/.zshrc_secret
+
 bindkey -e
 
 setopt auto_pushd
