@@ -55,3 +55,5 @@ cask install skitch || true
 cask install recordit || true
 cask install clipmenu || true
 cask install gitter || true
+cask install github || true
+cask install alfred || true
