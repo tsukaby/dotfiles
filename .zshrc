@@ -123,8 +123,4 @@ function cd() {
   builtin cd $@ && ls;
 }
 
-# AWS
-# AWS-CLI
-source /usr/local/share/zsh/site-functions/_aws
-
 export PGDATA=/usr/local/var/postgres
