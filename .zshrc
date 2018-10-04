@@ -19,6 +19,7 @@ export ANDROID_HOME=/usr/local/opt/android-sdk
 
 # Scala
 export SCALA_HOME=/usr/local/opt/scala/idea/
+export SBT_OPTS="-Xms1G -Xmx1G -Xss2M"
 
 # Go
 export GOPATH=$HOME/.go
