@@ -20,9 +20,6 @@ export ANDROID_HOME=/usr/local/opt/android-sdk
 # Scala
 export SCALA_HOME=/usr/local/opt/scala/idea/
 
-# nodejs
-export NVM_DIR=~/.nvm
-source $(brew --prefix nvm)/nvm.sh
 # Go
 export GOPATH=$HOME/.go
 
