@@ -31,6 +31,8 @@ export KUBECONFIG=$KUBECONFIG:~/.kube/config-test
 export PATH=/usr/local/bin:$PATH
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
+# pyenv completion
+if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 
 # Secret settings
 source ~/.zshrc_secret
