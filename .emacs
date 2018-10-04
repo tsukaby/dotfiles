@@ -15,9 +15,6 @@
 ;;; 補完時に大文字小文字を区別しない
 (setq completion-ignore-case t)
 
-;;; 補完機能
-(partial-completion-mode 1)
-
 ;;; スクロールを一行ずつにする
 (setq scroll-step 1)
 
