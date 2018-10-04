@@ -117,6 +117,9 @@ alias history='history -E'
 alias ll='ls -l'
 alias dl='docker ps -l -q'
 alias drm='docker rm `docker ps -a -q`'
+alias dockerc='docker-compose'
+alias dockerm='docker-machine'
+alias rspec-custom="bundle exec rspec --exclude-pattern='spec/features/*'"
 
 # execute ls after cd
 function cd() {
