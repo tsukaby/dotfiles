@@ -23,6 +23,12 @@ export SCALA_HOME=/usr/local/opt/scala/idea/
 # nodejs
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
+# Go
+export GOPATH=$HOME/.go
+
+# AWS EKS
+export KUBECONFIG=$KUBECONFIG:~/.kube/config-test
+
 
 # Secret settings
 source ~/.zshrc_secret
@@ -127,3 +133,9 @@ function cd() {
 }
 
 export PGDATA=/usr/local/var/postgres
+
+# The next line updates PATH for the Google Cloud SDK.
+source '/usr/local/google-cloud-sdk/path.zsh.inc'
+
+# The next line enables shell command completion for gcloud.
+source '/usr/local/google-cloud-sdk/completion.zsh.inc'
