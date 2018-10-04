@@ -26,6 +26,10 @@ export GOPATH=$HOME/.go
 # AWS EKS
 export KUBECONFIG=$KUBECONFIG:~/.kube/config-test
 
+# Ruby (rbenv)
+export PATH=/usr/local/bin:$PATH
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
 
 # Secret settings
 source ~/.zshrc_secret
