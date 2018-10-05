@@ -1,13 +1,36 @@
 # (d) is default on
 
 # ------------------------------
+# ZSH Settings
+# ------------------------------
+export ZSH="/Users/tsukaby/.oh-my-zsh"
+ZSH_THEME="candy"
+plugins=(
+    git
+    zsh-syntax-highlighting
+    zsh-completions
+)
+
+# zsh-completions
+autoload -U compinit && compinit -u
+source $ZSH/oh-my-zsh.sh
+
+
+# ------------------------------
 # General Settings
 # ------------------------------
 export EDITOR=emacs
 export LANG=ja_JP.UTF-8
 # Add homebrew path
-export PATH=~/bin:/usr/local/sbin:/usr/local/bin:$PATH
+path=(
+    /usr/local/bin(N-/)
+    $HOME/.rbenv/bin(N-/)
+    $HOME/.nodebrew/current/bin(N-/)
+    $path
+)
 
+fpath=(/usr/local/share/zsh-completions $fpath)
+    
 # AWS ec2-api-tools
 export JAVA_HOME="$(/usr/libexec/java_home)"
 if [ -e "$HOME/.ec2" ]; then
@@ -30,7 +53,6 @@ export GOPATH=$HOME/.go
 export KUBECONFIG=$KUBECONFIG:~/.kube/config-test
 
 # Ruby (rbenv)
-export PATH=/usr/local/bin:$PATH
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # pyenv completion
