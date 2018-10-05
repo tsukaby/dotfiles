@@ -141,10 +141,10 @@ function cd() {
 export PGDATA=/usr/local/var/postgres
 
 # The next line updates PATH for the Google Cloud SDK.
-source '/usr/local/google-cloud-sdk/path.zsh.inc'
+source /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc
 
 # The next line enables shell command completion for gcloud.
-source '/usr/local/google-cloud-sdk/completion.zsh.inc'
+source /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc
 
 # Docker settings
 docker-machine start
