@@ -12,3 +12,7 @@ Thumbs.db
 
 # Backup files
 *~
+
+# Intellij
+.idea
+*.iml
