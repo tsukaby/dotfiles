@@ -7,9 +7,9 @@ export ZSH="/Users/tsukaby/.oh-my-zsh"
 ZSH_THEME="candy"
 plugins=(
     git
-    zsh-syntax-highlighting
-    zsh-completions
 )
+
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # zsh-completions
 autoload -U compinit && compinit -u
