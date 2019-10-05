@@ -48,6 +48,8 @@ export SBT_OPTS="-Xms1G -Xmx1G -Xss2M"
 
 # Go
 export GOPATH=$HOME/.go
+export GOBIN=$GOPATH/bin
+export PATH=$PATH:$GOBIN
 
 # AWS EKS
 export KUBECONFIG=$KUBECONFIG:~/.kube/config-test
