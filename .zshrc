@@ -176,6 +176,10 @@ source /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.z
 docker-machine start
 eval $(docker-machine env)
 
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
 function prev() {
   PREV=$(fc -lrn | head -n 1)
   sh -c "pet new `printf %q "$PREV"`"
