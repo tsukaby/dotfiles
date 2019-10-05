@@ -156,6 +156,8 @@ alias drm='docker rm `docker ps -a -q`'
 alias dockerc='docker-compose'
 alias dockerm='docker-machine'
 alias rspec-custom="bundle exec rspec --exclude-pattern='spec/features/*'"
+# https://qiita.com/takuya0301/items/695f42f6904e979f0152
+alias brew="PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin brew"
 
 # execute ls after cd
 function cd() {
