@@ -24,16 +24,6 @@ source $ZSH/oh-my-zsh.sh
 # ------------------------------
 export EDITOR=vi
 export LANG=ja_JP.UTF-8
-# Add homebrew path
-path=(
-    /usr/local/bin(N-/)
-    $HOME/.rbenv/bin(N-/)
-    $HOME/.nodebrew/current/bin(N-/)
-    $path
-)
-
-fpath=(/usr/local/share/zsh-completions $fpath)
-
 
 # Android
 export ANDROID_HOME=/usr/local/opt/android-sdk
