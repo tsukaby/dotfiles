@@ -19,7 +19,7 @@ source $ZSH/oh-my-zsh.sh
 # ------------------------------
 # General Settings
 # ------------------------------
-export EDITOR=emacs
+export EDITOR=vi
 export LANG=ja_JP.UTF-8
 # Add homebrew path
 path=(
