@@ -57,12 +57,6 @@ export PATH=$PATH:$GOBIN
 # AWS EKS
 export KUBECONFIG=$KUBECONFIG:~/.kube/config-test
 
-# Ruby (rbenv)
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-
-# pyenv completion
-if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
-
 # Secret settings
 source ~/.zshrc_secret
 
