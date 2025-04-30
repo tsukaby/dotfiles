@@ -11,3 +11,5 @@ ln -s $(pwd)/.zshrc ~/.zshrc
 
 rm -f ~/.emacs
 ln -s $(pwd)/.emacs ~/.emacs
+
+touch ~/.zshrc_secret
