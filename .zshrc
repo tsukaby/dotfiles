@@ -33,7 +33,7 @@ path=(
 )
 
 fpath=(/usr/local/share/zsh-completions $fpath)
-    
+
 # AWS ec2-api-tools
 export JAVA_HOME="$(/usr/libexec/java_home)"
 if [ -e "$HOME/.ec2" ]; then
@@ -137,7 +137,7 @@ precmd() {
     [[ -t 1 ]] || return
     case $TERM in
         *xterm*|rxvt|(dt|k|E)term)
-        print -Pn "\e]2;[%~]\a"    
+        print -Pn "\e]2;[%~]\a"
 ;;
         # screen)
         #      #print -Pn "\e]0;[%n@%m %~] [%l]\a"
