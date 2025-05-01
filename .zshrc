@@ -78,54 +78,6 @@ bindkey "^N" history-beginning-search-forward-end
 function history-all { history -E 1 }
 
 # ------------------------------
-# Look And Feel Settings
-# ------------------------------
-### Ls Color ###
-export LSCOLORS=Exfxcxdxbxegedabagacad
-export LS_COLORS='di=01;34:ln=01;35:so=01;32:ex=01;31:bd=46;34:cd=43;34:su=41;30:sg=46;30:tw=42;30:ow=43;30'
-export ZLS_COLORS=$LS_COLORS
-export CLICOLOR=true
-zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
-
-### Prompt ###
-autoload -U colors; colors
-tmp_prompt="%F{cyan}[%n@%m %C]%f%# "
-tmp_prompt2="%{${fg[cyan]}%}%_> %{${reset_color}%}"
-tmp_rprompt="%{${fg[green]}%}[%~]%{${reset_color}%}"
-tmp_sprompt="%{${fg[yellow]}%}%r is correct? [Yes, No, Abort, Edit]:%{${reset_color}%}"
-
-# root user is bold and underline
-if [ ${UID} -eq 0 ]; then
-  tmp_prompt="%B%U${tmp_prompt}%u%b"
-  tmp_prompt2="%B%U${tmp_prompt2}%u%b"
-  tmp_rprompt="%B%U${tmp_rprompt}%u%b"
-  tmp_sprompt="%B%U${tmp_sprompt}%u%b"
-fi
-
-PROMPT=$tmp_prompt
-PROMPT2=$tmp_prompt2
-SPROMPT=$tmp_sprompt
-# Ssh login prompt
-[ -n "${REMOTEHOST}${SSH_CONNECTION}" ] &&
-  PROMPT="%{${fg[white]}%}${HOST%%.*} ${PROMPT}"
-;
-
-#Title
-precmd() {
-    [[ -t 1 ]] || return
-    case $TERM in
-        *xterm*|rxvt|(dt|k|E)term)
-        print -Pn "\e]2;[%~]\a"
-;;
-        # screen)
-        #      #print -Pn "\e]0;[%n@%m %~] [%l]\a"
-        #      print -Pn "\e]0;[%n@%m %~]\a"
-        #      ;;
-    esac
-}
-
-
-# ------------------------------
 # Other Settings
 # ------------------------------
 
