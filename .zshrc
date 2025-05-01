@@ -6,8 +6,9 @@
 # ------------------------------
 # ZSH Settings
 # ------------------------------
-export ZSH="/Users/tsukaby/.oh-my-zsh"
-ZSH_THEME="candy"
+# Path to your Oh My Zsh installation.
+export ZSH="$HOME/.oh-my-zsh"
+ZSH_THEME="fishy"
 plugins=(
     git
 )
