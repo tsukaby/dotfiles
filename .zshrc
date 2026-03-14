@@ -11,6 +11,9 @@ autoload -Uz compinit && compinit
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
+# z (directory jumper)
+. /opt/homebrew/etc/profile.d/z.sh
+
 # Starship prompt
 eval "$(starship init zsh)"
 
