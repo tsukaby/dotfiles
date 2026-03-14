@@ -1,6 +1,5 @@
-# Amazon Q pre block. Keep at the top of this file.
-[[ -f "${HOME}/Library/Application Support/amazon-q/shell/zshrc.pre.zsh" ]] && builtin source "${HOME}/Library/Application Support/amazon-q/shell/zshrc.pre.zsh"
-
+# Kiro CLI pre block. Keep at the top of this file.
+[[ -f "${HOME}/Library/Application Support/kiro-cli/shell/zshrc.pre.zsh" ]] && builtin source "${HOME}/Library/Application Support/kiro-cli/shell/zshrc.pre.zsh"
 # (d) is default on
 
 # ------------------------------
@@ -9,14 +8,17 @@
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="fishy"
+# oh-my-zsh内のcompinit時にパーミッションチェック(compaudit)をスキップして起動を高速化
+DISABLE_COMPFIX=true
+skip_global_compinit=1
+ZSH_DISABLE_COMPFIX=true
+
 plugins=(
     git
 )
 
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-# zsh-completions
-autoload -U compinit && compinit -u
 source $ZSH/oh-my-zsh.sh
 
 
@@ -51,7 +53,7 @@ setopt prompt_subst
 setopt notify
 
 ### Complement ###
-autoload -U compinit; compinit
+# compinit is already called by oh-my-zsh
 setopt auto_list
 setopt list_packed
 setopt list_types
@@ -113,5 +115,5 @@ eval "$(direnv hook zsh)"
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 # export CPPFLAGS="-I/opt/homebrew/opt/openjdk/include"
 
-# Amazon Q post block. Keep at the bottom of this file.
-[[ -f "${HOME}/Library/Application Support/amazon-q/shell/zshrc.post.zsh" ]] && builtin source "${HOME}/Library/Application Support/amazon-q/shell/zshrc.post.zsh"
+# Kiro CLI post block. Keep at the bottom of this file.
+[[ -f "${HOME}/Library/Application Support/kiro-cli/shell/zshrc.post.zsh" ]] && builtin source "${HOME}/Library/Application Support/kiro-cli/shell/zshrc.post.zsh"
