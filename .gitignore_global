@@ -16,3 +16,6 @@ Thumbs.db
 # Intellij
 .idea
 *.iml
+
+# Claude Code
+.claude/settings.local.json
