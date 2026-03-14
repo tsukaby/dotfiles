@@ -1,0 +1,86 @@
+{
+  "permissions": {
+    "allow": [
+      "Edit(**)",
+      "Write(**)",
+      "Bash(while read file)",
+      "Bash(head *)",
+      "Bash(cat *)",
+      "Bash(grep *)",
+      "Bash(wc *)",
+      "Bash(ls *)",
+      "Bash(find *)",
+      "Bash(stat *)",
+      "Bash(file *)",
+      "Bash(echo *)",
+      "Bash(printf *)",
+      "Bash(pwd)",
+      "Bash(which *)",
+      "Bash(node *)",
+      "Bash(npm run *)",
+      "Bash(npx *)",
+      "Bash(yarn *)",
+      "Bash(pnpm *)",
+      "Bash(tsc *)",
+      "Bash(eslint *)",
+      "Bash(prettier *)",
+      "Bash(git status)",
+      "Bash(git log *)",
+      "Bash(git diff *)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git push *)",
+      "Bash(git pull *)",
+      "Bash(git checkout *)",
+      "Bash(git branch *)",
+      "Bash(git stash *)",
+      "Bash(git fetch *)",
+      "Bash(gh *)",
+      "Bash(cd *)",
+      "Bash(brew list *)",
+      "Bash(brew leaves *)",
+      "Bash(brew leaves)",
+      "Bash(brew info *)",
+      "Bash(brew uses *)",
+      "Bash(brew deps *)",
+      "Bash(brew autoremove --dry-run*)",
+      "Bash(brew cleanup --dry-run*)",
+      "Bash(brew bundle dump *)",
+      "Bash(/Applications/GitButler.app/Contents/MacOS/gitbutler-tauri *)",
+      "WebFetch(domain:www.chromatic.com)"
+    ],
+    "deny": [
+      "Bash(cat *id_rsa*)",
+      "Bash(cat *id_ed25519*)",
+      "Bash(cat *.pem)",
+      "Bash(cat *.key)",
+      "Bash(cat *.env*)",
+      "Bash(cat *secret*)",
+      "Bash(cat *credential*)",
+      "Bash(cat *password*)",
+      "Bash(cat *token*)",
+      "Bash(rm -rf *)",
+      "Bash(sudo *)",
+      "Bash(chmod 777 *)",
+      "Bash(curl * | bash)",
+      "Bash(wget * | bash)",
+      "Bash(npm publish *)",
+      "Bash(git push --force*)",
+      "Bash(git reset --hard *)",
+      "Bash(git clean -fd*)"
+    ]
+  },
+  "hooks": {
+    "Stop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "afplay /System/Library/Sounds/Ping.aiff"
+          }
+        ]
+      }
+    ]
+  }
+}
