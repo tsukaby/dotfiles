@@ -1,0 +1,62 @@
+# Starship Prompt Configuration
+# ~/.config/starship.toml
+
+# プロンプト全体のフォーマット
+format = """
+$directory\
+$git_branch\
+$git_status\
+$nodejs\
+$python\
+$golang\
+$java\
+$rust\
+$docker_context\
+$line_break\
+$character"""
+
+# プロンプト表示の待ち時間 (ms)
+command_timeout = 500
+
+[character]
+success_symbol = "[❯](bold green)"
+error_symbol = "[❯](bold red)"
+
+[directory]
+truncation_length = 3
+truncate_to_repo = true
+style = "bold cyan"
+
+[git_branch]
+format = "on [$branch]($style) "
+style = "bold purple"
+
+[git_status]
+format = '([$all_status$ahead_behind]($style) )'
+style = "bold red"
+
+[nodejs]
+format = "via [$symbol($version)]($style) "
+symbol = " "
+detect_files = ["package.json", ".node-version"]
+
+[python]
+format = "via [$symbol($version)]($style) "
+symbol = " "
+
+[golang]
+format = "via [$symbol($version)]($style) "
+symbol = " "
+
+[java]
+format = "via [$symbol($version)]($style) "
+symbol = " "
+
+[rust]
+format = "via [$symbol($version)]($style) "
+symbol = " "
+
+[docker_context]
+format = "via [$symbol$context]($style) "
+symbol = " "
+only_with_files = true

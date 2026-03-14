@@ -1,26 +1,18 @@
 # Kiro CLI pre block. Keep at the top of this file.
 [[ -f "${HOME}/Library/Application Support/kiro-cli/shell/zshrc.pre.zsh" ]] && builtin source "${HOME}/Library/Application Support/kiro-cli/shell/zshrc.pre.zsh"
-# (d) is default on
 
 # ------------------------------
-# ZSH Settings
+# ZSH Core Settings
 # ------------------------------
-# Path to your Oh My Zsh installation.
-export ZSH="$HOME/.oh-my-zsh"
-ZSH_THEME="fishy"
-# oh-my-zsh内のcompinit時にパーミッションチェック(compaudit)をスキップして起動を高速化
-DISABLE_COMPFIX=true
-skip_global_compinit=1
-ZSH_DISABLE_COMPFIX=true
+# 補完の初期化 (oh-my-zsh が担っていた部分を自前で実行)
+autoload -Uz compinit && compinit
 
-plugins=(
-    git
-)
-
+# Plugins (Homebrew経由でインストール)
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-source $ZSH/oh-my-zsh.sh
-
+# Starship prompt
+eval "$(starship init zsh)"
 
 # ------------------------------
 # General Settings
@@ -53,7 +45,6 @@ setopt prompt_subst
 setopt notify
 
 ### Complement ###
-# compinit is already called by oh-my-zsh
 setopt auto_list
 setopt list_packed
 setopt list_types
@@ -89,6 +80,17 @@ alias ll='ls -l'
 alias dl='docker ps -l -q'
 alias drm='docker rm `docker ps -a -q`'
 
+# oh-my-zsh git plugin から引き継ぎ (よく使うもののみ)
+alias g='git'
+alias gst='git status'
+alias gco='git checkout'
+alias gcm='git commit -m'
+alias gp='git push'
+alias gl='git pull'
+alias gd='git diff'
+alias gb='git branch'
+alias glog='git log --oneline --decorate --graph'
+
 # execute ls after cd
 function cd() {
   builtin cd $@ && ls;
@@ -108,12 +110,10 @@ export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
 export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
 
 # Auto run direnv
-# shell起動が少し遅くなるのでできれば避けたい
 eval "$(direnv hook zsh)"
 
 # OpenJDK
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
-# export CPPFLAGS="-I/opt/homebrew/opt/openjdk/include"
 
 # Kiro CLI post block. Keep at the bottom of this file.
 [[ -f "${HOME}/Library/Application Support/kiro-cli/shell/zshrc.post.zsh" ]] && builtin source "${HOME}/Library/Application Support/kiro-cli/shell/zshrc.post.zsh"
