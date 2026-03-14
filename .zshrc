@@ -115,5 +115,8 @@ eval "$(direnv hook zsh)"
 # OpenJDK
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 
+# Antigravity
+export PATH="/Users/tsukaby/.antigravity/antigravity/bin:$PATH"
+
 # Kiro CLI post block. Keep at the bottom of this file.
 [[ -f "${HOME}/Library/Application Support/kiro-cli/shell/zshrc.post.zsh" ]] && builtin source "${HOME}/Library/Application Support/kiro-cli/shell/zshrc.post.zsh"
