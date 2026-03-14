@@ -27,6 +27,8 @@ cd ~/IdeaProjects/dotfiles
 - `~/.gitignore_global`
 - `~/.zshrc`
 - `~/.emacs`
+- `~/.config/starship.toml`
+- `~/.claude/settings.json`
 - `~/Brewfile`
 
 ### 4. Homebrew パッケージを一括インストール
