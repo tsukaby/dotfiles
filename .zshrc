@@ -4,8 +4,13 @@
 # ------------------------------
 # ZSH Core Settings
 # ------------------------------
-# 補完の初期化 (oh-my-zsh が担っていた部分を自前で実行)
-autoload -Uz compinit && compinit
+# 補完の初期化 (24時間以内はキャッシュを使用して高速化)
+autoload -Uz compinit
+if [[ -n ~/.zcompdump(#qN.mh+24) ]]; then
+  compinit
+else
+  compinit -C
+fi
 
 # Plugins (Homebrew経由でインストール)
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
