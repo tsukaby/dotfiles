@@ -47,7 +47,9 @@
       "Bash(brew cleanup --dry-run*)",
       "Bash(brew bundle dump *)",
       "Bash(/Applications/GitButler.app/Contents/MacOS/gitbutler-tauri *)",
-      "WebFetch(domain:www.chromatic.com)"
+      "WebFetch(domain:www.chromatic.com)",
+      "WebSearch",
+      "WebFetch"
     ],
     "deny": [
       "Bash(cat *id_rsa*)",
