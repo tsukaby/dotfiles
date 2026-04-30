@@ -14,7 +14,6 @@ brew "gh"
 brew "ghq"
 
 # Languages / Runtime
-brew "asdf"
 brew "mise"
 brew "deno"
 brew "rustup"

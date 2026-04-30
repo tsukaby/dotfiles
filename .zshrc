@@ -111,8 +111,8 @@ function prev() {
   sh -c "pet new `printf %q "$PREV"`"
 }
 
-# asdf
-export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
+# mise
+eval "$(mise activate zsh)"
 
 # pg gem用
 export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
@@ -128,3 +128,4 @@ export PATH="/Users/tsukaby/.antigravity/antigravity/bin:$PATH"
 
 # Kiro CLI post block. Keep at the bottom of this file.
 [[ -f "${HOME}/Library/Application Support/kiro-cli/shell/zshrc.post.zsh" ]] && builtin source "${HOME}/Library/Application Support/kiro-cli/shell/zshrc.post.zsh"
+export PATH=$PATH:$HOME/.maestro/bin

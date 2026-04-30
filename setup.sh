@@ -21,6 +21,10 @@ mkdir -p ~/.config
 rm -f ~/.config/starship.toml
 ln -s $(pwd)/starship.toml ~/.config/starship.toml
 
+mkdir -p ~/.config/mise
+rm -f ~/.config/mise/config.toml
+ln -s $(pwd)/mise-config.toml ~/.config/mise/config.toml
+
 mkdir -p ~/.claude
 rm -f ~/.claude/settings.json
 ln -s $(pwd)/claude-settings.json ~/.claude/settings.json

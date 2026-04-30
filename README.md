@@ -28,6 +28,7 @@ cd ~/IdeaProjects/dotfiles
 - `~/.zshrc`
 - `~/.emacs`
 - `~/.config/starship.toml`
+- `~/.config/mise/config.toml`
 - `~/.claude/settings.json`
 - `~/Brewfile`
 
@@ -39,6 +40,14 @@ brew bundle --file=~/Brewfile
 
 VS Code 拡張も含めて全パッケージがインストールされます。
 
+### 5. mise でランタイムをインストール
+
+```bash
+mise install
+```
+
+`~/.config/mise/config.toml` に定義された go, node, python, ruby がインストールされます。
+
 ### Brewfile の更新
 
 パッケージを追加・削除した後に Brewfile を更新するには:
@@ -46,3 +55,14 @@ VS Code 拡張も含めて全パッケージがインストールされます。
 ```bash
 brew bundle dump --file=~/IdeaProjects/dotfiles/Brewfile --force
 ```
+
+### mise の管理
+
+ツールの追加・バージョン変更:
+
+```bash
+mise use -g python@latest    # グローバル設定を更新
+mise use -g ruby@3.4.3       # 特定バージョンを指定
+```
+
+変更は `~/.config/mise/config.toml`（= dotfiles の `mise-config.toml`）に反映されます。
